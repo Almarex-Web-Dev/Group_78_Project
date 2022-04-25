@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Poppins:wght@400;700&family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+  --logo-color: CAB686: 
+} */
+body {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+header {
+  width: 100%;
+  height: 12vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #bd9d54;
+  z-index: 999;
+}
+.navbar_wrapper {
+  width: 80%;
+  margin: 40px auto 0;
+}
+.top_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top_nav h1 {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #c3672e;
+}
+.top_nav span {
+  color: #000000;
+}
+.menu_icons {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.menu_icons .btn_times {
+  display: none;
+}
+
+/* Links container */
+.nav_links_wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+ul.links_container {
+  list-style: none;
+  text-align: center;
+}
+ul.links_container li {
+  padding: 1.5rem 0;
+}
+ul.links_container li a {
+  text-decoration: none;
+  color: #7e3d01;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+
+/* Home page section starts here */
+
+.section_home {
+  width: 100%;
+  position: relative;
+  background-color: black;
+}
+.section_home_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  /* z-index: -999; */
+  overflow: hidden;
+}
+.section_home h1 {
+  font-size: 2.5rem;
+  color: #ec7b11;
+  font-family: sans-serif;
+}
+.section_home .brand_desc {
+  font-size: 1.2rem;
+  font-family: 'Ms madi', cursive;
+  color: #c3672e;
+  margin: 5px 0;
+}
+.content {
+  width: 80%;
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.description {
+  margin-top: 30px;
+  font-size: 0.875rem;
+  color: #939291;
+  margin-bottom: 30px;
+}
+
+.btn_wrapper .btn {
+  width: 100px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  transition: background 0.5s linear;
+}
+.btn_wrapper button a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1d1d1d;
+}
+.btn_order {
+  background-color: #cab686;
+}
+.btn_order:hover {
+  background-color: #bd9d54;
+}
+.btn_contact {
+  margin-left: 20px;
+  background: #f1a879;
+}
+.btn_contact:hover {
+  background: #c3672e;
+}
+.hero_image {
+  width: 100%;
+  height: 250px;
+  background: #bd9d54;
+  border-radius: 1000px 0 0 0/1000px 0 0 0;
+  position: relative;
+}
+.hero_image img {
+  width: 350px;
+  height: auto;
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  transform: rotate(-20deg);
+}
+
+/* ABout section starts here */
+.section_about {
+  width: 85%;
+  margin: 100px auto 0;
+}
+.section_about h1 {
+  font-size: 2rem;
+  color: #c3672e;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0 0 15px;
+}
+.section_about span {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  font-family: 'Ms Madi', sans-serif;
+  color: #c3672e;
+}
+
+.about_content {
+  display: flex;
+  flex-direction: column;
+}
+.chef_img {
+  text-align: center;
+  color: #7e3d01;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+.chef_img img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid #bd9d54;
+  margin-bottom: 20px;
+}
+/* about description */
+
+.about_description p {
+  width: 90%;
+  font-size: 0.875rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+  line-height: 2;
+  color: #545353;
+}
+
+/* Product section */
+
+.menu_items_wrapper {
+  width: 80%;
+  margin: 120px auto 0;
+}
+.menu_items_wrapper h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #c3672e;
+}
+.menu_items_wrapper p {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #c3672e;
+  font-size: 1.5rem;
+  font-family: 'Ms Madi', cursive;
+}
+.menuItem {
+  position: relative;
+  margin-bottom: 40px;
+}
+.menuItem::after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: #bd9d54;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  border-radius: 10px;
+}
+
+.menuItem img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 5px solid #bd9d54;
+  margin-bottom: 20px;
+}
+.item_desc {
+  display: flex;
+  justify-content: space-between;
+}
+.item_desc span {
+  font-size: 1.5rem;
+  color: #bd9d54;
+  font-weight: 400;
+  font-family: 'Ms Madi', cursive;
+}
+
+/* section contact */
+
+.section_contact {
+  width: 80%;
+  margin: 100px auto 0;
+}
+.contact_header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contact_header h1 {
+  font-size: 2rem;
+  color: #c3672e;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0 0 15px;
+}
+.contact_header p {
+  color: #3a3939;
+  font-size: 0.875rem;
+}
+
+.contact-form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  width: 100%;
+  margin: auto;
+  line-height: 2.7;
+  font-family: 'Roboto', sans-serif;
+}
+input[type='text'],
+input[type='email'] {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  background: #3a3939;
+  padding: 5px 20px;
+  color: #adabab;
+}
+
+textarea {
+  width: 100%;
+  height: 30vh;
+  background: #3a3939;
+  outline: none;
+  border: none;
+  padding: 20px;
+  color: #adabab;
+  margin-top: 3px;
+}
+input[type='submit'] {
+  width: 100%;
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #bd9d54;
+  font-size: 0.875rem;
+  color: #1f1e1e;
+}
+
+/* get In TOuch section */
+.get_in_touch {
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+.get_in_touch h1 {
+  margin-bottom: 25px;
+  color: #bd9d54;
+}
+.icons {
+  line-height: 2.5rem;
+}
+.icons .fas,
+svg {
+  color: #bd9d54;
+}
+/* footer section */
+footer {
+  width: 100%;
+  height: 12vh;
+  background: #000;
+  color: #bd9d54;
+  text-align: center;
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_body {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -1,0 +1,169 @@
+/* Media query for Navbar */
+@media screen and (min-width: 700px) {
+  .navbar_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav_links_wrapper {
+    height: auto !important;
+    overflow: visible;
+  }
+  .menu_icons {
+    display: none;
+  }
+  ul.links_container {
+    display: flex;
+  }
+  ul.links_container li {
+    padding: 0;
+    width: 100px;
+  }
+
+  /* The responsiveness for Home section */
+  .section_home_wrapper {
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 0 0 auto;
+    flex-direction: row;
+  }
+  .section_home h1 {
+    font-size: 4rem;
+    color: #ec7b11;
+    font-family: sans-serif;
+  }
+  .section_home .brand_desc {
+    font-size: 3rem;
+    color: #c3672e;
+    margin: 5px 0;
+  }
+  .content {
+    width: 500px;
+  }
+  .description {
+    margin-top: 30px;
+    font-size: 0.875rem;
+    color: #939291;
+    margin-bottom: 30px;
+  }
+
+  .btn_wrapper .btn {
+    width: 130px;
+    padding: 12px;
+  }
+  .hero_image {
+    width: 500px;
+    height: 700px;
+    border-radius: 50% 0 0 50%;
+    position: relative;
+    top: 70px;
+    right: -100px;
+  }
+  .hero_image img {
+    width: 700px;
+    top: 100px;
+    right: -50px;
+    transform: rotate(-25deg);
+    animation: heroImage 15s ease-in-out 5s infinite;
+    animation-direction: alternate;
+    transition: all 0.7s;
+  }
+
+  @keyframes heroImage {
+    40% {
+      transform: rotate(-25deg) translateY(35px);
+    }
+    60% {
+      transform: rotate(-25deg) translateX(30px);
+    }
+    100% {
+      transform: rotate(-25deg) translateY(40px);
+    }
+  }
+
+  .section_about h1 {
+    font-size: 2.5rem;
+  }
+  .section_about span {
+    display: block;
+    font-size: 2rem;
+  }
+  .about_content {
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .chef_img img {
+    width: 350px;
+    height: auto;
+  }
+  /* about description */
+
+  .about_description p {
+    width: 500px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    line-height: 2;
+  }
+
+  /* Product section */
+
+  .menu_items_wrapper {
+    width: 80%;
+    max-width: 1137px;
+    margin: 120px auto 0;
+  }
+  .menu_items_wrapper h1 {
+    font-size: 2.5rem;
+    color: #c3672e;
+  }
+  .product_section {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .menuItem img {
+    width: 230px;
+    height: auto;
+  }
+
+  /* contact form  */
+  .section_contact {
+    width: 70%;
+    max-width: 1078px;
+  }
+  .contact_header {
+    width: 500px;
+    margin: auto;
+  }
+  .contact_header h1 {
+    font-size: 2rem;
+    color: #c3672e;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0 0 15px;
+  }
+  .contact_header p {
+    margin-bottom: 40px;
+  }
+  .contact-form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  form {
+    width: 400px;
+    margin: 0;
+  }
+
+  /* get iIn Touch */
+  .get_in_touch {
+    margin: 0;
+    text-align: left;
+  }
+}
